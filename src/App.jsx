@@ -16,22 +16,45 @@ function App() {
 
   const [selectedCourses, setSelectedCourses] = useState([]);
   const [totalCredit, setTotalCredit] = useState(0);
+  const [remainingCredit, setRemainingCredit] = useState(20);
+  const [price, setPrice] = useState(0);
 
-  const handleAddToCourse = (course, credit) => {
-    const ifExist = selectedCourses.find((selectedCourse) => selectedCourse.id === course.id);
+  const handleAddToCourse = (course) => {
+    let totalCredit = course.credit;
+    let totalPrice = course.price
 
-    if (ifExist) {
+    if (selectedCourses.find((selectedCourse) => selectedCourse.id === course.id)) {
       Swal.fire(
         '',
         'You have already selected this course!',
         'info'
       );
       return;
+    } else {
+      selectedCourses.forEach((course) => {
+        totalCredit = totalCredit + course.credit;
+      });
+      selectedCourses.forEach((course) => {
+        totalPrice = totalPrice + course.price;
+      });
+      const remaining = 20 - totalCredit;
+
+      if (totalCredit > 20) {
+        Swal.fire(
+          '',
+          'Your maximum credit is 20! You have no permission to add this course. ',
+          'error'
+        );
+        return;
+      } else {
+
+        const newSelectedCourse = [...selectedCourses, course];
+        setSelectedCourses(newSelectedCourse);
+        setTotalCredit(totalCredit);
+        setRemainingCredit(remaining)
+        setPrice(totalPrice);
+      }
     }
-    const newSelectedCourse = [...selectedCourses, course];
-    setSelectedCourses(newSelectedCourse);
-    const newTotalCredit = totalCredit + credit;
-    setTotalCredit(newTotalCredit);
   }
   // console.log(selectedCourses);
 
@@ -40,7 +63,7 @@ function App() {
       <Header></Header>
       <div className='md:flex max-w-7xl mx-auto gap-4'>
         <Courses courses={courses} handleAddToCourse={handleAddToCourse} ></Courses>
-        <SelectedCourse selectedCourses={selectedCourses} totalCredit={totalCredit} ></SelectedCourse>
+        <SelectedCourse selectedCourses={selectedCourses} totalCredit={totalCredit} remainingCredit={remainingCredit} price={price} ></SelectedCourse>
       </div>
     </div>
   )
