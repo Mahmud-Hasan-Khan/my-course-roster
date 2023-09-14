@@ -1,16 +1,16 @@
 
 import PropTypes from 'prop-types';
 
-const Course = ({ course }) => {
-    const { id, image, name, details, price, credit } = course;
-    console.log(course);
+const Course = ({ course, handleAddToCourse }) => {
+    const { image, name, details, price, credit } = course;
+    // console.log(course);
     return (
 
         <div className="card bg-[#fff] w-[312px] shadow-xl p-4 space-y-4 rounded-xl">
-            <figure className="px-1 pt-1">
+            <figure className="">
                 <img src={image} alt="Course Picture" className="rounded-xl" />
             </figure>
-            <div className="card-body space-y-3">
+            <div className="space-y-3">
                 <h2 className="text-lg font-semibold">{name}</h2>
                 <p>{details}</p>
                 <div className='flex justify-between text-[#737272] text-base font-medium'>
@@ -29,7 +29,7 @@ const Course = ({ course }) => {
                     </div>
                 </div>
                 <div>
-                    <button className="bg-[#2F80ED] text-white w-full rounded-lg border-[#2F80ED] hover:font-semibold ">Select</button>
+                    <button onClick={() => handleAddToCourse(course, credit)} className="bg-[#2F80ED] text-white w-full rounded-lg border-[#2F80ED] hover:font-semibold ">Select</button>
                 </div>
             </div>
         </div>
@@ -38,7 +38,8 @@ const Course = ({ course }) => {
 };
 
 Course.propTypes = {
-    course: PropTypes.object
+    course: PropTypes.object,
+    handleAddToCourse: PropTypes.func.isRequired
 };
 
 export default Course;
