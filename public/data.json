@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Introduction to C Programming",
+        "image": "https://i.ibb.co/25ZW5rC/Rectangle-2-2.png",
+        "details": "Learn the fundamentals of C programming, including variables, data types, control structures, and functions. Start building your coding skills.",
+        "price": 15000,
+        "credit": 4
+    },
+    {
+        "id": 2,
+        "name": "Introduction to Algorithms",
+        "image": "https://i.ibb.co/NYhwfJG/Rectangle-2-3.png",
+        "details": "Explore the world of algorithms, data structures, and algorithmic problem-solving techniques. Dive into sorting, searching, and optimization algorithms.",
+        "price": 25000,
+        "credit": 5
+    },
+    {
+        "id": 3,
+        "name": "Introduction to C++ for DSA",
+        "image": "https://i.ibb.co/CVbC81v/Rectangle-2-4.png",
+        "details": "Master C++ programming and its applications in Data Structures and Algorithms. Learn about pointers, linked lists, trees, and more.",
+        "price": 10000,
+        "credit": 6
+    },
+    {
+        "id": 4,
+        "name": "Basic Data Structures",
+        "image": "https://i.ibb.co/9rNkNXv/Rectangle-3.png",
+        "details": "Get a deep understanding of fundamental data structures like arrays, stacks, queues, and linked lists. Learn how to implement and when to use.",
+        "price": 35000,
+        "credit": 4
+    },
+    {
+        "id": 5,
+        "name": "Introduction to OOP Python",
+        "image": "https://i.ibb.co/Ybbxxcw/Rectangle-2.png",
+        "details": "Explore Object-Oriented Programming (OOP) principles using Python. Learn how to create classes, objects, and build modular and reusable code.",
+        "price": 19000,
+        "credit": 4
+    },
+    {
+        "id": 6,
+        "name": "Software Engineering",
+        "image": "https://i.ibb.co/C8St0m9/Rectangle-2-5.png",
+        "details": "Gain insights into the software development lifecycle, requirements analysis, design patterns, and best practices in software engineering.",
+        "price": 23000,
+        "credit": 6
+    },
+    {
+        "id": 7,
+        "name": "AWS Cloud Computing",
+        "image": "https://i.ibb.co/ZBDFNb0/Rectangle-3-1.png",
+        "details": "Discover Amazon Web Services (AWS) cloud computing services, including EC2, S3, and Lambda. Learn to deploy scalable and cost-effective solutions.",
+        "price": 35000,
+        "credit": 7
+    },
+    {
+        "id": 8,
+        "name": "Database (MySQL)",
+        "image": "https://i.ibb.co/H4r4tt0/Rectangle-2-1.png",
+        "details": "Master the MySQL database management system, from database design and querying to transactions and optimization.",
+        "price": 19000,
+        "credit": 4
+    },
+    {
+        "id": 9,
+        "name": "Problem-Solving Part",
+        "image": "https://i.ibb.co/P4sSQWN/Rectangle-2-6.png",
+        "details": "Enhance your problem-solving skills through coding challenges and real-world problem-solving techniques. Sharpen your coding and algorithmic.",
+        "price": 23000,
+        "credit": 3
+    }
+]
