@@ -29,7 +29,7 @@ const Course = ({ course, handleAddToCourse }) => {
                     </div>
                 </div>
                 <div>
-                    <button onClick={() => handleAddToCourse(course, credit)} className="bg-[#2F80ED] text-white w-full rounded-lg border-[#2F80ED] hover:font-semibold ">Select</button>
+                    <button onClick={() => handleAddToCourse(course, credit)} className="bg-[#2F80ED] text-white w-full rounded-lg py-1 border-[#2F80ED] hover:font-semibold ">Select</button>
                 </div>
             </div>
         </div>

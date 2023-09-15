@@ -15,7 +15,7 @@ const SelectedCourse = ({ selectedCourses, totalCredit, remainingCredit, price }
             <div className="divider"></div>
             <h5 className='text-base font-medium'>Total Credit Hour : {totalCredit} </h5>
             <div className="divider"></div>
-            <h5 className='text-base font-medium'>Total Price : {price} USD</h5>
+            <h5 className='text-base font-semibold'>Total Price : {price} USD</h5>
         </div>
     );
 };
