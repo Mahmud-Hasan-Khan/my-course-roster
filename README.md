@@ -26,4 +26,7 @@ I have used 5 useState & 1 useEffect in this assignment project.
 - const [price, setPrice] = useState(0);
     - This line initializes a state variable called price with an initial value of 0. This state will store the total price of the selected courses. 
 
-Finally The state of selected courses, checks for duplicates, and ensures that the total credit hours and price stay within specified limits. It provides feedback to the user through Swal (SweetAlert) pop-up messages in case of errors or duplicate selections.       
+Finally The state of selected courses, checks for duplicates, and ensures that the total credit hours and price stay within specified limits. It provides feedback to the user through Swal (SweetAlert) pop-up messages in case of errors or duplicate selections. 
+
+## Live Site Link
+- [Click Here to Open Live Site](https://65051a439d357c4c8e0d9dc9--velvety-seahorse-93366b.netlify.app/)
