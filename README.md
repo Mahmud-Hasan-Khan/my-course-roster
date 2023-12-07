@@ -31,5 +31,5 @@ Finally The state of selected courses, checks for duplicates, and ensures that t
 ## Live Site Link
 - [Click Here to Open Live Site](https://65051a439d357c4c8e0d9dc9--velvety-seahorse-93366b.netlify.app/)
 
-## Screenshots
+## Screenshot
 ![App Screenshot](https://i.ibb.co/jMNgFnB/my-course-roster-1.png)
