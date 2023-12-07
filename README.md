@@ -1,4 +1,4 @@
-# Course-Registration
+# My-Course-Roster
  A Simple React Application, where user can select maximum 20 credit course from 9 curses available.
 
 ## Project features
@@ -30,3 +30,6 @@ Finally The state of selected courses, checks for duplicates, and ensures that t
 
 ## Live Site Link
 - [Click Here to Open Live Site](https://65051a439d357c4c8e0d9dc9--velvety-seahorse-93366b.netlify.app/)
+
+## Screenshots
+![App Screenshot](https://i.ibb.co/jMNgFnB/my-course-roster-1.png)
